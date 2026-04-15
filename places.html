@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The top places to visit in London — landmarks, museums, viewpoints and historic sites."
+    />
+    <title>Places — London Travel Guide</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="home.html" class="brand">
+          <span class="brand-mark">L</span>
+          London Guide
+        </a>
+        <nav class="main-navigation" aria-label="Primary">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li><a href="transport.html">Transport</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li>
+              <a
+                href="places.html"
+                class="fav-counter"
+                data-count="0"
+                aria-label="View saved places"
+              >
+                ♥ <span class="fav-count-num">0</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <section class="section-intro">
+        <span class="eyebrow">Places to visit</span>
+        <h2>Where the city reveals itself</h2>
+        <p>
+          A curated shortlist. Filter by category, search by name, save your
+          favourites for later.
+        </p>
+      </section>
+
+      <div class="places-toolbar" role="search">
+        <div class="search-wrapper">
+          <label
+            for="place-search"
+            class="visually-hidden"
+            style="position: absolute; left: -9999px"
+            >Search places</label
+          >
+          <input
+            type="text"
+            id="place-search"
+            placeholder="Search places…"
+            autocomplete="off"
+          />
+        </div>
+        <div class="filter-chips" role="group" aria-label="Filter by category">
+          <button class="chip active" data-filter="all" type="button">
+            All
+          </button>
+          <button class="chip" data-filter="royal" type="button">Royal</button>
+          <button class="chip" data-filter="museum" type="button">
+            Museum
+          </button>
+          <button class="chip" data-filter="view" type="button">
+            Viewpoint
+          </button>
+          <button class="chip" data-filter="historic" type="button">
+            Historic
+          </button>
+        </div>
+      </div>
+
+      <section id="places-box" aria-label="Places to visit">
+        <article
+          class="place-card"
+          data-place-id="buckingham"
+          data-category="royal"
+        >
+          <div class="card-image">
+            <img
+              src="media/buckingham_palace.jpg"
+              alt="The front of Buckingham Palace with the Victoria Memorial."
+              onerror="
+                this.parentElement.style.background =
+                  'linear-gradient(135deg,#0a2540,#d4622a)'
+              "
+            />
+            <span class="category-tag">Royal</span>
+          </div>
+          <h3>Buckingham Palace</h3>
+          <p>
+            Both a working royal palace and the monarch's official London
+            residence. Don't miss the Changing of the Guard ceremony.
+          </p>
+          <ul class="place-meta">
+            <li><strong>Hours</strong>9:30 AM – 7:30 PM</li>
+            <li><strong>From</strong>£35.00 adult · £17.50 child</li>
+            <li><strong>Tube</strong>Victoria · Green Park</li>
+          </ul>
+          <div class="card-actions">
+            <a
+              href="https://www.google.com/maps/place/Buckingham+Palace/@51.501364,-0.14189,14z"
+              target="_blank"
+              rel="noopener"
+              class="map-link"
+              >View on map →</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="place-card"
+          data-place-id="british-museum"
+          data-category="museum"
+        >
+          <div class="card-image">
+            <img
+              src="media/british_museum.jpg"
+              alt="The Great Court at the British Museum."
+              onerror="
+                this.parentElement.style.background =
+                  'linear-gradient(135deg,#0a2540,#d4622a)'
+              "
+            />
+            <span class="category-tag">Museum</span>
+          </div>
+          <h3>The British Museum</h3>
+          <p>
+            A vast public collection devoted to art, culture, and human history
+            — and home to the Rosetta Stone.
+          </p>
+          <ul class="place-meta">
+            <li><strong>Hours</strong>10:00 AM – 5:00 PM</li>
+            <li><strong>Entry</strong>Free</li>
+            <li><strong>Tube</strong>Holborn · Tottenham Court Road</li>
+          </ul>
+          <div class="card-actions">
+            <a
+              href="https://www.google.com/maps/place/The+British+Museum/@51.519412,-0.1444638,14z"
+              target="_blank"
+              rel="noopener"
+              class="map-link"
+              >View on map →</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="place-card"
+          data-place-id="the-shard"
+          data-category="view"
+        >
+          <div class="card-image">
+            <img
+              src="media/the_shard.webp"
+              alt="The Shard skyscraper against the London skyline."
+              onerror="
+                this.parentElement.style.background =
+                  'linear-gradient(135deg,#0a2540,#d4622a)'
+              "
+            />
+            <span class="category-tag">Viewpoint</span>
+          </div>
+          <h3>The Shard</h3>
+          <p>
+            A 95-storey tower with 360-degree viewing platforms, the highest
+            vantage point in Western Europe.
+          </p>
+          <ul class="place-meta">
+            <li><strong>Hours</strong>Thu–Sun, varies</li>
+            <li><strong>From</strong>£28.50 (under-3 free)</li>
+            <li><strong>Tube</strong>London Bridge</li>
+          </ul>
+          <div class="card-actions">
+            <a
+              href="https://www.google.com/maps/place/The+Shard/@51.5045,-0.0865,17z"
+              target="_blank"
+              rel="noopener"
+              class="map-link"
+              >View on map →</a
+            >
+          </div>
+        </article>
+
+        <article
+          class="place-card"
+          data-place-id="tower-of-london"
+          data-category="historic"
+        >
+          <div class="card-image">
+            <img
+              src="media/tower_of_london.jpg"
+              alt="The Tower of London."
+              onerror="
+                this.parentElement.style.background =
+                  'linear-gradient(135deg,#0a2540,#d4622a)'
+              "
+            />
+            <span class="category-tag">Historic</span>
+          </div>
+          <h3>The Tower of London</h3>
+          <p>
+            A historic castle on the north bank of the Thames, and the home of
+            England's Crown Jewels.
+          </p>
+          <ul class="place-meta">
+            <li><strong>Hours</strong>10:00 AM – 5:30 PM</li>
+            <li><strong>Entry</strong>£29.90</li>
+            <li><strong>Tube</strong>Tower Hill</li>
+          </ul>
+          <div class="card-actions">
+            <a
+              href="https://www.google.com/maps/place/Tower+of+London/@51.5081124,-0.0785242,17z"
+              target="_blank"
+              rel="noopener"
+              class="map-link"
+              >View on map →</a
+            >
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="brand-line">
+          Atif Faisal
+          <span>London Travel Guide · 2026</span>
+        </div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
